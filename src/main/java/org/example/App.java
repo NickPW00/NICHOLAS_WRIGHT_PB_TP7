@@ -11,6 +11,7 @@ public class App {
         Aluno aluno1 = new Aluno(1001, "Maria");
         Aluno aluno2 = new Aluno(1002, "Pedro");
         turma.addAluno(aluno1);
+        System.out.println(turma.abrirTurma());
         turma.addAluno(aluno2);
 
         boolean turmaAberta = turma.abrirTurma();

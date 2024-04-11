@@ -33,7 +33,7 @@ public class Turma {
     }
 
     public String addAluno(Aluno aluno){
-        if(alunos.size() <= 50){
+        if(alunos.size() <= 10){
             alunos.add(aluno);
             return "Aluno Adicionado";
         }
@@ -41,7 +41,7 @@ public class Turma {
     }
 
     public boolean abrirTurma(){
-        return alunos.size() <= 50 && alunos.size() >= 10;
+        return alunos.size() >= 2;
     }
 
     public String gerarPauta(){
